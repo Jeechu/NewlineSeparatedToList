@@ -1,0 +1,27 @@
+[
+    {
+        "caption": "Newline To List: Double quotes",
+        "command": "newline_to_list",
+        "args": {"quote_type": "double"}
+    },
+    {
+        "caption": "Newline To List: Single quotes",
+        "command": "newline_to_list",
+        "args": {"quote_type": "single"}
+    },
+    {
+        "caption": "Newline To List: No quotes",
+        "command": "newline_to_list",
+        "args": {"quote_type": "none"}
+    },
+    {
+        "caption": "Newline To List: Dynamic double quotes",
+        "command": "newline_to_list",
+        "args": {"quote_type": "dynamic_double"}
+    },
+    {
+        "caption": "Newline To List: Dynamic single quotes",
+        "command": "newline_to_list",
+        "args": {"quote_type": "dynamic_single"}
+    }
+]
