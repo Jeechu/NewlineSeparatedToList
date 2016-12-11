@@ -33,3 +33,35 @@ Options:
 * **Newline to List: Single quotes** - adds single quotes to each item in list, escapes any single quotes already present
 * **Newline to List: Dynamic double quotes** - adds double quotes to each non-digits item in list, escapes any double quotes already present
 * **Newline to List: Dynamic single quotes** - adds single quotes to each non-digits item in list, escapes any single quotes already present
+
+## Examples
+
+```python
+  one
+  two
+  three
+  4
+  five
+
+  # Becomes (with square brackets)
+  ["one", "two", "three", "4", "five"]    #with double quotes
+  [one, two, three, 4, five]              #with no quotes
+  ['one', 'two', 'three', '4', 'five']    #with single quotes
+  ["one", "two", "three", 4, "five"]      #with dynamic double quotes
+  ['one', 'two', 'three', 4, 'five']      #with dynamic single quotes
+```
+
+```python
+  one
+  two
+  three
+  4
+  five
+
+  # Becomes (with no brackets)
+  "one", "two", "three", "4", "five"      #with double quotes
+  one, two, three, 4, five                #with no quotes
+  'one', 'two', 'three', '4', 'five'      #with single quotes
+  "one", "two", "three", 4, "five"        #with dynamic double quotes
+  'one', 'two', 'three', 4, 'five'        #with dynamic single quotes
+```
