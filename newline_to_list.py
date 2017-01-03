@@ -82,7 +82,7 @@ class PerformNewlineToListCommand(sublime_plugin.TextCommand):
         # Split region at newline and create list of each line if content of individual line is not empty, and also add quotes around the content
         all_lines = [quote+self.view.substr(line).replace(quote, escaped_quote)+quote for line in self.view.split_by_newlines(region) if self.view.substr(line) != ""]
 
-      # join all lines seperated by command followed by space, wrapped by brackets
+      # join all lines separated by command followed by space, wrapped by brackets
       new_content = ", ".join(all_lines)
       if new_content != "":
         new_content = open_bracket + ", ".join(all_lines) + close_bracket

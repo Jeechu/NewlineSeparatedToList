@@ -1,6 +1,6 @@
-# NewlineSeperatedToList for Sublime Text 3
+# NewlineSeparatedToList for Sublime Text 3
 
-This package makes converting newline seperated document (or selection of document) to a list easier.
+This package makes converting newline separated document (or selection of document) to a list easier.
 
 ## Settings
 
